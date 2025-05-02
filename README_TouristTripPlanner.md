@@ -1,24 +1,24 @@
 
-# 🧭 Tourist Trip Planner (C++ & GUI)
+# Tourist Trip Planner (C++ & GUI)
 
 This project is a real-world travel planning system built using C++ for the Data Structures course project. It lets users select countries, cities, and interests to generate a full travel itinerary with estimated time, cost, and a suggested route.
 
 ---
 
-## 🔧 Features
+## Features
 
-- 🌍 Country selection (Saudi Arabia, Japan, Austria)
-- 🏙️ Choose cities or get smart AI-style recommendations
-- 🎯 Filter attractions based on interests (Nature, History, Entertainment, etc.)
-- 💵 Calculate total cost based on places selected
-- ⏱️ Calculate total time & days needed (based on user travel speed)
-- 📍 Show suggested route
-- 💬 Output is structured and realistic
-- 🖼️ GUI version included for beautiful website-style display
+- Country selection (Saudi Arabia, Japan, Austria)
+- Choose cities or get smart AI-style recommendations
+- Filter attractions based on interests (Nature, History, Entertainment, etc.)
+- Calculate total cost based on places selected
+- Calculate total time & days needed (based on user travel speed)
+- Show suggested route
+- Output is structured and realistic
+- GUI version included for beautiful website-style display
 
 ---
 
-## 🧱 Code Structure
+## Code Structure
 
 | File | Purpose |
 |------|---------|
@@ -30,11 +30,11 @@ This project is a real-world travel planning system built using C++ for the Data
 
 ---
 
-## 🖥️ Console Preview
+## Console Preview
 
 ```
 City: Tokyo
-- Visit: Meiji Shrine (History) - 2 hrs, $15
+- Visit: Meiji Shrine (History) - 2 hrs, $150
 - Eat at: Sushi Dai Tokyo
 
 Suggested Route:
@@ -42,28 +42,28 @@ Meiji Shrine -> Sushi Dai Tokyo
 
 Total Visit Time: 4 hrs
 Estimated Days: 1 day
-Estimated Total Cost: $15
+Estimated Total Cost: $150
 ```
 
 ---
 
-## 🌐 GUI Version
+## GUI Version
 
 - `DS_projectGUI.zip` contains the web version of the app built using HTML, CSS, and JS.
-- Beautiful beige theme based on travel apps like Pinterest
+- Beautiful beige theme based on travel apps 
 - Users can input countries, cities, and see card-based plans with real images
 
 ---
 
-## 👩‍💻 Team Members
+## Team Members
 
-- Jouri Aldaghma — C++ implementation, logic, GUI, presentation
-- [Teammate 2] — Visuals, website
-- [Teammate 3] — Testing, review
+- Jouri Aldaghma — Led the project planning, implemented core C++ logic (TripPlanner, data structures), and integrated the GUI version using HTML/CSS/JS.
+- Maram Alhusami — Assisted in C++ design, tested logic for budget/speed estimation, helped write project documentation and validated data consistency.
+- Farah Aburayya — Worked on the GUI presentation, researched real locations and categories for each city, and helped with final formatting, README, and visuals.
 
 ---
 
-## 📚 Technologies Used
+## Technologies Used
 
 - C++  
 - STL (vectors, maps, strings)  
@@ -71,8 +71,8 @@ Estimated Total Cost: $15
 
 ---
 
-## ✅ Final Verdict
+## Final Verdict
 
-✔️ Meets all Data Structures project requirements  
-✔️ Bonus features: AI recs, budget check, speed-based planning  
-✔️ Web version included for UX showcase  
+ Meets all Data Structures project requirements  
+ Bonus features: AI recs, budget check, speed-based planning  
+ Web version included for UX showcase  
