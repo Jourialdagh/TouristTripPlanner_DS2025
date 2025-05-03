@@ -8,21 +8,21 @@ using namespace std;
 TripPlanner::TripPlanner() {
     // Saudi Arabia
     CityNode riyadh("Riyadh");
-    riyadh.addAttraction("Riyadh Boulevard", "Entertainment", 2, 100);
-    riyadh.addAttraction("Masmak Fortress", "History", 2, 200);
-    riyadh.addAttraction("Kingdom Centre Tower", "Landmark", 2, 300);
+    riyadh.addAttraction("Riyadh Boulevard", "Entertainment", 5, 100);
+    riyadh.addAttraction("Masmak Fortress", "History", 5, 200);
+    riyadh.addAttraction("Kingdom Centre Tower", "Landmark", 3, 300);
     riyadh.addRestaurant("Al Nakheel Restaurant");
     riyadh.addRestaurant("Nozomi Riyadh");
 
     CityNode jeddah("Jeddah");
     jeddah.addAttraction("Jeddah Corniche", "Nature", 3, 50);
-    jeddah.addAttraction("Red Sea Mall", "Entertainment", 2, 300);
-    jeddah.addAttraction("Al Balad Historic District", "History", 2, 300);
+    jeddah.addAttraction("Red Sea Mall", "Entertainment", 4, 300);
+    jeddah.addAttraction("Al Balad Historic District", "History", 5, 300);
     jeddah.addRestaurant("Toki Jeddah");
     jeddah.addRestaurant("Shawarma Shakir Aljazeera");
 
     CityNode alula("AlUla");
-    alula.addAttraction("AlUla Old Town", "History", 2, 200);
+    alula.addAttraction("AlUla Old Town", "History", 5, 200);
     alula.addAttraction("Edge of the World", "Nature", 4, 250);
     alula.addRestaurant("Suhail Restaurant AlUla");
     alula.addRestaurant("Somewhere AlUla");
@@ -31,23 +31,23 @@ TripPlanner::TripPlanner() {
 
     // Japan
     CityNode tokyo("Tokyo");
-    tokyo.addAttraction("Tokyo Tower", "Landmark", 2, 400);
-    tokyo.addAttraction("Meiji Shrine", "History", 2, 150);
-    tokyo.addAttraction("Ghibli Museum", "Entertainment", 3, 400);
-    tokyo.addAttraction("Akihabara District", "Entertainment", 2, 350);
+    tokyo.addAttraction("Tokyo Tower", "Landmark", 4, 400);
+    tokyo.addAttraction("Meiji Shrine", "History", 5, 150);
+    tokyo.addAttraction("Ghibli Museum", "Entertainment", 5, 400);
+    tokyo.addAttraction("Akihabara District", "Entertainment", 5, 350);
     tokyo.addRestaurant("Ichiran Ramen Tokyo");
     tokyo.addRestaurant("Sushi Dai Tokyo");
 
     CityNode kyoto("Kyoto");
-    kyoto.addAttraction("Fushimi Inari Shrine", "History", 2, 250);
+    kyoto.addAttraction("Fushimi Inari Shrine", "History", 3, 250);
     kyoto.addAttraction("Kyoto Temples", "History", 3, 100);
-    kyoto.addAttraction("Arashiyama Bamboo Grove", "Nature", 3, 200);
+    kyoto.addAttraction("Arashiyama Bamboo Grove", "Nature", 4, 200);
     kyoto.addRestaurant("Gion Karyo Kyoto");
     kyoto.addRestaurant("Omen Kyoto");
 
     CityNode osaka("Osaka");
-    osaka.addAttraction("Osaka Castle", "History", 2, 150);
-    osaka.addAttraction("Namba Parks", "Entertainment", 2, 500);
+    osaka.addAttraction("Osaka Castle", "History", 3, 150);
+    osaka.addAttraction("Namba Parks", "Entertainment", 5, 500);
     osaka.addAttraction("Universal Studios Japan", "Entertainment", 5, 450);
     osaka.addRestaurant("Mizuno Osaka");
     osaka.addRestaurant("Kushikatsu Daruma Osaka");
@@ -56,21 +56,21 @@ TripPlanner::TripPlanner() {
 
     // Austria
     CityNode vienna("Vienna");
-    vienna.addAttraction("Schönbrunn Palace", "History", 3, 200);
-    vienna.addAttraction("St. Stephen’s Cathedral", "History", 2, 100);
-    vienna.addAttraction("Hofburg Palace", "History", 3, 250);
+    vienna.addAttraction("Schönbrunn Palace", "History", 4, 200);
+    vienna.addAttraction("St. Stephen’s Cathedral", "History", 3, 100);
+    vienna.addAttraction("Hofburg Palace", "History", 4, 250);
     vienna.addRestaurant("Steirereck Vienna");
     vienna.addRestaurant("Plachutta Vienna");
 
     CityNode salzburg("Salzburg");
-    salzburg.addAttraction("Salzburg Old Town", "History", 2, 100);
-    salzburg.addAttraction("Hohensalzburg Fortress", "History", 2, 250);
+    salzburg.addAttraction("Salzburg Old Town", "History", 3, 100);
+    salzburg.addAttraction("Hohensalzburg Fortress", "History", 4, 250);
     salzburg.addRestaurant("St. Peter Stiftskeller Salzburg");
     salzburg.addRestaurant("Bärenwirt Salzburg");
 
     CityNode hallstatt("Hallstatt");
-    hallstatt.addAttraction("Hallstatt Village", "Nature", 3, 50);
-    hallstatt.addAttraction("Hallstatt Skywalk", "Nature", 2, 100);
+    hallstatt.addAttraction("Hallstatt Village", "Nature", 5, 50);
+    hallstatt.addAttraction("Hallstatt Skywalk", "Nature", 4, 100);
     hallstatt.addRestaurant("Restaurant Im Seehotel Gruner Baum");
     hallstatt.addRestaurant("Braugasthof Hallstatt");
 
@@ -151,7 +151,7 @@ void TripPlanner::planTrip(string country, vector<string> selectedCities, vector
 
     cout << "\nTotal Visit Time: " << totalHours << " hours\n";
 
-    int hoursPerDay = (speed == "Relaxed") ? 4 : (speed == "Moderate") ? 6 : 8;
+    int hoursPerDay = (speed == "Relaxed") ? 5 : (speed == "Moderate") ? 7 : 10+;
     int days = totalHours / hoursPerDay + (totalHours % hoursPerDay != 0 ? 1 : 0);
     cout << "Estimated Days Needed (" << speed << "): " << days << " day(s)\n";
 
